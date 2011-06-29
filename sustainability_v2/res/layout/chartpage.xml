@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/bkground" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:baselineAligned="false"
+	android:orientation="horizontal" android:scrollbars="vertical">
+
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:scrollbars="vertical">
+
+
+		<TableLayout android:id="@+id/tableLayout1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:stretchColumns="1,2,3">
+
+			<ImageView android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:scaleType="center"
+				android:src="@drawable/logo" />
+
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:textColor="#000000"
+				android:text=" " android:textSize="20px" android:textStyle="bold" />
+
+
+			<TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:minWidth="0.25in">
+				<TextView android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:textColor="#000000"
+					android:text=" " android:textSize="20px" android:textStyle="bold" />
+				<TextView android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:textColor="#006400"
+					android:textSize="25px" android:layout_gravity="center"
+					android:textStyle="bold" android:text="@string/chart_selection" />
+			</TableRow>
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:textColor="#000000"
+				android:text=" " android:textSize="20px" android:textStyle="bold" />
+			<TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"></TableRow>
+			<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:layout_centerInParent="true">
+
+				<LinearLayout android:layout_width="wrap_content"
+					android:id="@+id/linearLayout2" android:layout_height="wrap_content"
+					android:layout_centerInParent="true">
+
+				</LinearLayout>
+			</RelativeLayout>
+
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:textColor="#000000"
+				android:text="" android:textSize="15px" android:textStyle="bold" />
+			<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:layout_centerInParent="true">
+				<LinearLayout android:layout_width="wrap_content"
+					android:id="@+id/linearLayout5" android:layout_height="wrap_content"
+					android:layout_centerInParent="true">
+					<Button android:textSize="18px" android:layout_height="wrap_content"
+						android:id="@+id/create_daily_chart" android:text="Today's Growth"
+						android:layout_width="wrap_content" android:layout_gravity="bottom"
+						android:textStyle="bold" android:width="170dip" android:height="50dip"></Button>
+				</LinearLayout>
+			</RelativeLayout>
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:textColor="#000000"
+				android:text=" " android:textSize="20px" android:textStyle="bold" />
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:textColor="#000000"
+				android:text="" android:textSize="15px" android:textStyle="bold" />
+			<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:layout_centerInParent="true">
+				<LinearLayout android:layout_width="wrap_content"
+					android:id="@+id/linearLayout5" android:layout_height="wrap_content"
+					android:layout_centerInParent="true">
+					<Button android:textSize="18px" android:layout_height="wrap_content"
+						android:id="@+id/create_total_chart" android:text="Overall Growth"
+						android:layout_width="wrap_content" android:layout_gravity="bottom"
+						android:textStyle="bold" android:width="170dip" android:height="50dip"></Button>
+				</LinearLayout>
+			</RelativeLayout>
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:textColor="#000000"
+				android:text="" android:textSize="15px" android:textStyle="bold" />
+			<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:layout_centerInParent="true">
+				<LinearLayout android:layout_width="wrap_content"
+					android:id="@+id/linearLayout6" android:layout_height="wrap_content"
+					android:layout_centerInParent="true">
+
+				</LinearLayout>
+			</RelativeLayout>
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:textColor="#000000"
+				android:text="" android:textSize="15px" android:textStyle="bold" />
+			<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:layout_centerInParent="true">
+				<LinearLayout android:layout_width="wrap_content"
+					android:id="@+id/linearLayout1" android:layout_height="wrap_content"
+					android:layout_centerInParent="true">
+				</LinearLayout>
+			</RelativeLayout>
+		</TableLayout>
+
+
+
+	</ScrollView>
+	<RelativeLayout android:id="@+id/InnerLayout"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true">
+
+
+		<ImageButton android:src="@drawable/icondata"
+			android:layout_width="wrap_content" android:id="@+id/create_chart"
+			android:layout_height="wrap_content" android:layout_toRightOf="@+id/ViewData"
+			android:background="@null" android:paddingBottom="12px"></ImageButton>
+
+		<ImageButton android:src="@drawable/icongarden"
+			android:layout_width="wrap_content" android:id="@+id/Garden"
+			android:layout_height="wrap_content" android:layout_toRightOf="@+id/create_chart"
+			android:background="@null" android:paddingLeft="12px"
+			android:paddingBottom="12px"></ImageButton>
+
+		<ImageButton android:src="@drawable/iconinfo"
+			android:layout_width="wrap_content" android:id="@+id/info"
+			android:layout_height="wrap_content" android:layout_toRightOf="@+id/Garden"
+			android:background="@null" android:paddingLeft="12px"
+			android:paddingBottom="12px">
+
+		</ImageButton>
+
+		<ImageButton android:src="@drawable/iconhome"
+			android:layout_width="wrap_content" android:id="@+id/home"
+			android:layout_height="wrap_content" android:layout_toRightOf="@+id/info"
+			android:background="@null" android:paddingLeft="12px"
+			android:paddingBottom="12px"></ImageButton>
+	</RelativeLayout>
+
+
+</RelativeLayout>
+ 

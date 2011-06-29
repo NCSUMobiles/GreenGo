@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/bkground" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:baselineAligned="false"
+	android:orientation="horizontal" android:scrollbars="vertical">
+
+
+	<TableLayout android:id="@+id/tableLayout1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:minWidth="0.25in">
+			<TextView android:layout_width="fill_parent" android:id="@+id/text"
+				android:layout_height="wrap_content" android:textColor="#cc0000"
+				android:text="AIR POLLUTION.. " android:textSize="30px"
+				android:textStyle="bold" />
+		</TableRow>
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:textColor="#000000"
+			android:text=" " android:textSize="20px" android:textStyle="bold" />
+
+		<TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:minWidth="0.25in">
+			<TextView android:layout_width="fill_parent" android:id="@+id/text"
+				android:layout_height="wrap_content" android:textColor="#000000"
+				android:text="What are we going to gift \n our children?"
+				android:textSize="20px" android:textStyle="bold" />
+		</TableRow>
+
+		<TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:minWidth="0.25in">
+			<TextView android:layout_width="fill_parent" android:id="@+id/text"
+				android:layout_height="wrap_content" android:textColor="#993300"
+				android:text="~ Parched land \n ~Polluted Atmosphere \n ~Photochemical Smog\n"
+				android:textSize="20px" android:textStyle="bold" />
+		</TableRow>
+
+		<TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:minWidth="0.25in">
+			<TextView android:layout_width="fill_parent" android:id="@+id/text"
+				android:layout_height="wrap_content" android:textColor="#000000"
+				android:text="No way!!!" android:textSize="20px" android:textStyle="bold" />
+		</TableRow>
+
+		<TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:minWidth="0.25in">
+			<TextView android:layout_width="fill_parent" android:id="@+id/text"
+				android:layout_height="wrap_content" android:textColor="#3B5323"
+				android:text=" IT'S HIGH TIME WE WATCH OUR \n CO2 EMISSIONS AND MAKE THE \n WORLD A GREENER PLACE\n"
+				android:textSize="20px" android:textStyle="bold" />
+		</TableRow>
+
+		<TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:minWidth="0.25in">
+			<TextView android:layout_width="fill_parent" android:id="@+id/text_link"
+				android:layout_height="wrap_content" android:textColor="#000000"
+				android:text="" android:textSize="20px" android:textStyle="bold" />
+		</TableRow>
+
+	</TableLayout>
+	<RelativeLayout android:id="@+id/InnerLayout"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true">
+
+
+		<ImageButton android:src="@drawable/icondata"
+			android:layout_width="wrap_content" android:id="@+id/create_chart"
+			android:layout_height="wrap_content" android:layout_toRightOf="@+id/ViewData"
+			android:background="@null" android:paddingLeft="20px"></ImageButton>
+
+		<ImageButton android:src="@drawable/icongarden"
+			android:layout_width="wrap_content" android:id="@+id/Garden"
+			android:layout_height="wrap_content" android:layout_toRightOf="@+id/create_chart"
+			android:background="@null" android:paddingLeft="12px"
+			android:paddingBottom="12px"></ImageButton>
+
+		<ImageButton android:src="@drawable/iconinfo"
+			android:layout_width="wrap_content" android:id="@+id/info"
+			android:layout_height="wrap_content" android:layout_toRightOf="@+id/Garden"
+			android:background="@null" android:paddingLeft="12px"
+			android:paddingBottom="12px"></ImageButton>
+
+		<ImageButton android:src="@drawable/iconhome"
+			android:layout_width="wrap_content" android:id="@+id/home"
+			android:layout_height="wrap_content" android:layout_toRightOf="@+id/info"
+			android:background="@null" android:paddingLeft="12px"
+			android:paddingBottom="12px"></ImageButton>
+	</RelativeLayout>
+
+</RelativeLayout>

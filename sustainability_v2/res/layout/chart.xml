@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/bkColor" >
+
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:scrollbars="vertical" >
+
+		<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="320px" android:layout_height="fill_parent">
+			<TableLayout android:id="@+id/tableLayout1"
+				android:layout_width="wrap_content" android:layout_height="wrap_content">
+				<TableRow>
+				 <TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textColor="#ffffff"
+						android:text="" android:background="#336699"
+						android:textSize="5px" android:textStyle="bold" />
+				</TableRow>
+				<TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:minWidth="0.25in" android:paddingLeft="10px">
+					<RelativeLayout>
+					
+					<TextView android:layout_width="wrap_content" android:id="@+id/imageView1"
+						android:layout_height="wrap_content" android:textColor="#ff0000"
+						android:text="CO" android:background="#ff0000"
+						android:textSize="20px" android:textStyle="bold"/>
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textColor="#ffffff"
+						android:text=" CO2 emissions!!" android:background="#336699"
+						android:textSize="20px" android:textStyle="bold" android:layout_toRightOf="@+id/imageView1" />
+				    </RelativeLayout>
+				</TableRow>
+				<TableRow>
+				 <TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textColor="#ffffff"
+						android:text="" android:background="#336699"
+						android:textSize="5px" android:textStyle="bold" />
+				</TableRow>
+				<TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:minWidth="0.25in" android:paddingLeft="10px">
+					<RelativeLayout>
+					<TextView android:layout_width="wrap_content" android:id="@+id/imageView2"
+						android:layout_height="wrap_content" android:textColor="#33CC33"
+						android:text="CO" android:background="#33CC33"
+						android:textSize="20px" android:textStyle="bold"/>
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textColor="#ffffff"
+						android:text=" No emissions!!" android:background="#336699"
+						android:textSize="20px" android:textStyle="bold" android:layout_toRightOf="@+id/imageView2" />
+					</RelativeLayout>
+				</TableRow>
+				<TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+					<LinearLayout android:id="@+id/pie_container"
+						android:layout_width="300px" android:layout_height="fill_parent">
+
+					</LinearLayout>
+				</TableRow>
+				<TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:minWidth="0.25in" android:layout_gravity="center">
+					<RelativeLayout>
+					<ImageView android:layout_width="wrap_content" android:id="@+id/imageView3" android:src="@drawable/flytrap"
+						android:layout_height="wrap_content" android:textColor="#33CC33"
+						android:text="CO" android:background="#33CC33"
+						android:textSize="20px" android:textStyle="bold"/>
+					<TextView android:layout_width="fill_parent" android:id="@+id/value"
+						android:layout_height="50px" android:textColor="#ffffff" android:gravity="center_vertical|center_horizontal"
+						android:text="thank you!!" android:background="@drawable/nativedirt"
+						android:textSize="20px" android:textStyle="bold" android:layout_toRightOf="@+id/imageView3"  />
+						</RelativeLayout>
+				</TableRow>
+			</TableLayout>
+		</HorizontalScrollView>
+	</ScrollView>
+
+</LinearLayout>

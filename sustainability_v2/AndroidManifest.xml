@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.application.sustain" android:versionCode="1"
+	android:versionName="1.0">
+
+
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<activity android:name="com.application.sustain_v2.sustainability_v2"
+			android:label="@string/app_name" android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name="com.application.sustain_v2.MainActivity"
+			android:label="@string/app_chart" android:screenOrientation="portrait">
+		</activity>
+		<activity android:name="com.application.sustain_v2.Garden"
+			android:label="@string/app_garden" android:screenOrientation="portrait">
+		</activity>
+		<activity android:name="com.application.sustain_v2.ranking"
+			android:label="@string/app_rate">
+		</activity>
+		<activity android:name="com.application.sustain_v2.activity_chart"
+			android:label="@string/app_rate" android:screenOrientation="portrait">
+		</activity>
+		<activity android:name="com.application.sustain_v2.ChartPage"
+			android:label="@string/chart_selection" android:screenOrientation="portrait">
+		</activity>
+		<activity android:name="com.application.sustain_v2.Info"
+			android:label="@string/app_info" android:screenOrientation="portrait">
+		</activity>
+		
+	</application>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+</manifest>

@@ -1,0 +1,56 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/grass1" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:baselineAligned="false"
+	android:orientation="horizontal">
+
+
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:scrollbars="vertical">
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:stretchColumns="0,1,2" android:id="@+id/maintable">
+
+
+		</TableLayout>
+	</ScrollView>
+	<RelativeLayout android:id="@+id/InnerLayout"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true">
+
+
+
+		<TextView android:layout_width="fill_parent" android:id="@+id/text"
+			android:layout_height="wrap_content" android:layout_below="@+id/maintable"
+			android:text=" " android:textSize="20px" android:textStyle="bold"
+			android:textColor="#5C3317" android:paddingLeft="35px"/>
+
+		<ImageButton android:src="@drawable/icondata"
+			android:layout_below="@+id/text" android:layout_width="wrap_content"
+			android:id="@+id/create_chart" android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/ViewData" android:background="@null"
+			android:paddingLeft="35px"></ImageButton>
+
+		<ImageButton android:src="@drawable/icongarden"
+			android:layout_below="@+id/text" android:layout_width="wrap_content"
+			android:id="@+id/Garden" android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/create_chart" android:background="@null"
+			android:paddingLeft="12px"></ImageButton>
+
+		<ImageButton android:src="@drawable/iconinfo"
+			android:layout_below="@+id/text" android:layout_width="wrap_content"
+			android:id="@+id/info" android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/Garden" android:background="@null"
+			android:paddingLeft="12px"></ImageButton>
+
+		<ImageButton android:src="@drawable/iconhome"
+			android:layout_below="@+id/text" android:layout_width="wrap_content"
+			android:id="@+id/home" android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/info" android:background="@null"
+			android:paddingLeft="12px"></ImageButton>
+
+	</RelativeLayout>
+
+</RelativeLayout>

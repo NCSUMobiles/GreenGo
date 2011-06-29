@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/bkground" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:baselineAligned="false"
+	android:orientation="horizontal" android:scrollbars="vertical">
+
+	<ImageView android:layout_width="fill_parent" android:id="@+id/logo"
+		android:layout_height="wrap_content" android:scaleType="center"
+		android:src="@drawable/logo" android:layout_alignParentTop="true" />
+
+	<TextView android:layout_width="fill_parent" android:id="@+id/text"
+		android:layout_height="wrap_content" android:textColor="#000000"
+		android:text="@string/hello" android:textSize="20px"
+		android:textStyle="bold" android:layout_below="@+id/logo" />
+
+
+	<TextView android:layout_width="fill_parent"
+		android:layout_below="@+id/text" android:layout_height="wrap_content"
+		android:textColor="#000000" android:text="\n" android:textSize="20px"
+		android:textStyle="bold" />
+
+	<View android:layout_width="fill_parent" android:layout_height="60dp" />
+
+	<ImageView android:layout_width="wrap_content" android:id="@+id/anim"
+		android:layout_height="wrap_content" android:scaleType="center"
+		android:layout_centerInParent="true" android:paddingTop="10dip"
+		android:layout_below="@+id/text" android:visibility="invisible" />
+
+
+	<Button android:textSize="18px" android:layout_height="wrap_content"
+		android:id="@+id/create_total_chart" android:text="Activity Chart"
+		android:layout_width="wrap_content" android:layout_gravity="bottom"
+		android:textStyle="bold" android:width="170dip" android:height="50dip"
+		android:visibility="invisible"></Button>
+
+	<Button android:text="Exit" android:textSize="18px" android:id="@+id/Exit"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_gravity="bottom" android:textStyle="bold"
+		android:width="130dip" android:height="50dip" android:visibility="invisible"></Button>
+
+
+
+	<RelativeLayout android:id="@+id/InnerLayout"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true">
+
+		<ImageButton android:src="@drawable/icongps"
+			android:layout_width="wrap_content" android:id="@+id/ViewData"
+			android:layout_height="wrap_content" android:layout_alignParentLeft="true" 
+			android:background="@null" android:paddingBottom="12px"></ImageButton>
+
+		<ImageButton android:src="@drawable/icondata"
+			android:layout_width="wrap_content" android:id="@+id/create_chart"
+			android:layout_height="wrap_content" android:layout_toRightOf="@+id/ViewData"
+			android:background="@null" android:paddingLeft="12px" android:paddingBottom="12px"></ImageButton>
+
+		<ImageButton android:src="@drawable/icongarden"
+			android:layout_width="wrap_content" android:id="@+id/Garden"
+			android:layout_height="wrap_content" android:layout_toRightOf="@+id/create_chart"
+			android:background="@null" android:paddingLeft="12px" android:paddingBottom="12px"></ImageButton>
+
+		<ImageButton android:src="@drawable/iconinfo"
+			android:layout_width="wrap_content" android:id="@+id/info"
+			android:layout_height="wrap_content" android:layout_toRightOf="@+id/Garden"
+			android:background="@null" android:paddingLeft="12px" android:paddingBottom="12px"></ImageButton>
+
+	</RelativeLayout>
+
+
+
+
+</RelativeLayout>
+ 

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bkground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:baselineAligned="false" android:orientation="horizontal">
+    <TableLayout android:id="@+id/tableLayout1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" android:stretchColumns="0,1,2">
+		
+    
+    <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.25in">
+    <TextView  android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor = "#000000" android:text="" android:textSize = "20px"
+    android:textStyle="bold" />
+     <TextView  android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor = "#000000" android:text=" " android:textSize = "20px"
+    android:textStyle="bold"
+     />     
+     <TextView  android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor = "#000000" android:text=" " android:textSize = "20px" android:textStyle="bold"/>
+     </TableRow>
+    
+    
+    <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.15in">
+    <ImageView android:layout_gravity="left" android:id="@+id/imageView1"  
+    android:src="@drawable/flower1"></ImageView>
+    <ImageView android:layout_gravity="center" android:id="@+id/imageView1"  
+    android:src="@drawable/nativedirt"></ImageView>
+    <ImageView android:layout_gravity="right" android:id="@+id/imageView1"  
+    android:src="@drawable/nativedirt"></ImageView>
+    </TableRow>
+    
+    <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.25in">
+    <TextView  android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor = "#000000" android:text="" android:textSize = "20px"
+    android:textStyle="bold" />
+     <TextView  android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor = "#000000" android:text=" " android:textSize = "20px"
+    android:textStyle="bold"
+     />
+     <TextView  android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor = "#000000" android:text=" " android:textSize = "20px"
+    android:textStyle="bold"
+     />
+     </TableRow>
+    
+    <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.15in">
+    <ImageView android:layout_gravity="left" android:id="@+id/imageView1"  
+    android:src="@drawable/nativedirt"></ImageView>
+    <ImageView android:layout_gravity="center" android:id="@+id/imageView1"  
+    android:src="@drawable/nativedirt"></ImageView>
+    <ImageView android:layout_gravity="right" android:id="@+id/imageView1"  
+    android:src="@drawable/nativedirt"></ImageView>
+    </TableRow>
+    
+    <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.25in">
+    <TextView  android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor = "#000000" android:text="" android:textSize = "20px"
+    android:textStyle="bold" />
+     <TextView  android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor = "#000000" android:text=" " android:textSize = "20px"
+    android:textStyle="bold"
+     />
+     <TextView  android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor = "#000000" android:text=" " android:textSize = "20px"
+    android:textStyle="bold"
+     />
+     </TableRow>
+    
+    <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.15in">
+    <ImageView android:layout_gravity="left" android:id="@+id/imageView1"  
+    android:src="@drawable/nativedirt"></ImageView>
+    <ImageView android:layout_gravity="center" android:id="@+id/imageView1"  
+    android:src="@drawable/nativedirt"></ImageView>
+    <ImageView android:layout_gravity="right" android:id="@+id/imageView1"  
+    android:src="@drawable/nativedirt"></ImageView>
+    </TableRow>
+    
+    <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.25in">
+    <TextView  android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor = "#000000" android:text="" android:textSize = "20px"
+    android:textStyle="bold" />
+     <TextView  android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor = "#000000" android:text=" " android:textSize = "20px"
+    android:textStyle="bold"
+     />
+     <TextView  android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor = "#000000" android:text=" " android:textSize = "20px"
+    android:textStyle="bold"
+     />
+     </TableRow> 
+    <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.25in">
+    <TextView  android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor = "#000000" android:text="Points ::" android:textSize = "20px"
+    android:textStyle="bold" />
+     <TextView android:id="@+id/points"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor = "#996699" android:text="25" android:textSize = "20px"
+    android:textStyle="bold"
+     />
+     <TextView  android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor = "#000000" android:text=" " android:textSize = "20px"
+    android:textStyle="bold"
+     />
+     
+     
+     </TableRow>
+    
+    
+    
+    </TableLayout>
+    
+</LinearLayout>
+ 
